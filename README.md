@@ -1,187 +1,378 @@
-# Decentralized Voting System Using Blockchain Technology
+# 🗳️ Decentralized Voting System Using Blockchain
 
-## 📌 About the Project
+A blockchain-based **Decentralized Voting System** designed to provide a transparent, secure, and tamper-resistant voting process using **Ethereum, Solidity, Web3, and MetaMask**.
 
-The **Decentralized Voting System Using Blockchain Technology** is a blockchain-based voting application developed as an academic project.
-
-The main purpose of this project is to demonstrate how blockchain and smart contracts can be used to make voting more **secure, transparent, and tamper-resistant**.
-
-The system uses **Ethereum blockchain technology** and allows users to connect their wallet using **MetaMask** and cast their votes through a web interface.
+This project was developed as an academic and collaborative Blockchain project to demonstrate how decentralized technologies can be applied to digital voting systems.
 
 ---
 
-## 🚀 Features
+## 📌 Project Overview
 
-* Blockchain-based voting
-* Secure vote recording
-* MetaMask wallet integration
-* Smart contract-based voting
-* Ethereum Sepolia test network support
-* Ganache local blockchain support
-* Simple and user-friendly interface
-* MySQL database integration
-* Vote verification through blockchain transactions
+Traditional voting systems can face challenges related to transparency, centralized control, data integrity, and trust.
+
+This project explores a decentralized approach where voting operations are managed through **blockchain smart contracts**. Votes can be recorded and verified on the blockchain, reducing dependence on a centralized authority.
+
+### Key Objectives
+
+* 🔐 Improve voting security
+* 🌐 Use blockchain for decentralized vote management
+* 🔎 Provide greater transparency
+* 🛡️ Prevent unauthorized modification of recorded votes
+* ⚡ Demonstrate smart-contract-based voting
+* 🦊 Integrate MetaMask for blockchain interaction
+
+---
+
+## ✨ Features
+
+* 👤 Voter registration and management
+* 🗳️ Candidate-based voting
+* 🔐 Blockchain-based vote recording
+* ⛓️ Ethereum smart contract integration
+* 🦊 MetaMask wallet integration
+* 📊 Vote counting and result display
+* 🔎 Transparent transaction verification
+* 🌐 Web-based voting interface
+* 🧪 Local blockchain testing with Ganache
+* 🚀 Support for Ethereum test networks such as Sepolia
 
 ---
 
 ## 🛠️ Technologies Used
 
-* **Blockchain:** Ethereum
-* **Smart Contract:** Solidity
-* **Test Network:** Sepolia
-* **Wallet:** MetaMask
-* **Smart Contract Tool:** Remix IDE
-* **Local Blockchain:** Ganache
-* **Framework:** Truffle
-* **Frontend:** HTML, CSS, JavaScript
-* **Runtime:** Node.js
-* **Database:** MySQL
-* **Version Control:** Git & GitHub
+| Technology       | Purpose                                |
+| ---------------- | -------------------------------------- |
+| **Solidity**     | Smart contract development             |
+| **Ethereum**     | Blockchain network                     |
+| **Web3.js**      | Blockchain interaction                 |
+| **MetaMask**     | Wallet and transaction management      |
+| **JavaScript**   | Application logic                      |
+| **HTML5**        | Frontend structure                     |
+| **CSS3**         | Frontend styling                       |
+| **Node.js**      | Backend/runtime environment            |
+| **MySQL**        | Data management                        |
+| **Ganache**      | Local blockchain development           |
+| **Sepolia**      | Ethereum test network                  |
+| **Git & GitHub** | Version control and project management |
 
 ---
 
-## 🔗 Network Configuration
-
-### Sepolia Test Network
-
-The project can be tested on the Ethereum **Sepolia test network** using test ETH.
-
-### Ganache Local Network
-
-For local testing:
+## 🏗️ System Architecture
 
 ```text
-RPC URL: http://localhost:7545
-Chain ID: 1337
-Currency: ETH
+                    ┌─────────────────────┐
+                    │       Voter         │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Web Application   │
+                    │    HTML/CSS/JS      │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │      MetaMask       │
+                    │   Wallet / Web3     │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Ethereum Blockchain │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │  Solidity Smart     │
+                    │     Contract        │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │ Voting Records &    │
+                    │      Results        │
+                    └─────────────────────┘
 ```
 
 ---
 
-## 🦊 MetaMask
+## 🔄 How the System Works
 
-MetaMask is used to connect the user's blockchain wallet with the voting application.
+### 1. Connect Wallet
 
-The user can:
+The voter connects their **MetaMask wallet** to the application.
 
-1. Open MetaMask.
-2. Connect the wallet to the required network.
-3. Open the voting application.
-4. Connect the wallet.
-5. Select a candidate.
-6. Confirm the transaction in MetaMask.
+### 2. Voter Registration
 
-> Never share or upload your MetaMask private key or recovery phrase.
+Eligible voters are registered through the application's voting system.
+
+### 3. Candidate Selection
+
+The voter can view the available candidates and select their preferred candidate.
+
+### 4. Cast Vote
+
+The voting transaction is sent through MetaMask and processed by the Solidity smart contract.
+
+### 5. Blockchain Verification
+
+The transaction is recorded on the Ethereum blockchain, providing a transparent and tamper-resistant record.
+
+### 6. Vote Counting
+
+The smart contract maintains the voting data and the application displays the corresponding results.
 
 ---
 
-## 📜 Smart Contract
-
-The voting logic is implemented using a **Solidity smart contract**.
-
-The smart contract manages the voting process and records voting-related information on the blockchain.
-
-The contract can be developed and deployed using **Remix IDE**.
-
----
-
-## 🗄️ Database
-
-The project also uses **MySQL** for supporting application data.
-
-Database name:
+## 📂 Project Structure
 
 ```text
-voter_db
+Decentralized-Voting-System/
+│
+├── contracts/
+│   └── *.sol
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── backend/
+│
+├── migrations/
+│
+├── images/
+│
+├── README.md
+│
+└── package.json
 ```
 
-> XAMPP is not required for this project. MySQL can be used directly.
 
 ---
 
-## ⚙️ How to Run
+## ⚙️ Installation & Setup
 
-### 1. Clone the Repository
+### Prerequisites
+
+Make sure the following are installed:
+
+* Node.js
+* npm
+* MetaMask
+* Git
+* Ganache or access to an Ethereum test network
+
+Check Node.js:
 
 ```bash
-https://github.com/bhavyweb3/Decentralized-Voting-System.git
+node --version
 ```
 
-### 2. Open the Project
+Check npm:
 
 ```bash
-cd YOUR-REPOSITORY
+npm --version
 ```
 
-### 3. Install Dependencies
+Check Git:
+
+```bash
+git --version
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Dhruvchain/Decentralized-Voting-System.git
+```
+
+Move into the project:
+
+```bash
+cd Decentralized-Voting-System
+```
+
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Start Ganache
+### 3. Start your local blockchain
 
-Run Ganache and use:
+Open **Ganache** and create/start a local blockchain network.
 
-```text
-RPC: http://localhost:7545
-Chain ID: 1337
+### 4. Configure MetaMask
+
+Connect MetaMask to your selected blockchain network and import the required development account if using Ganache.
+
+### 5. Deploy the smart contract
+
+Compile and deploy the Solidity smart contract according to the project's configuration.
+
+### 6. Start the application
+
+Use the appropriate project command, for example:
+
+```bash
+npm start
 ```
 
-### 5. Connect MetaMask
-
-Connect MetaMask to the Ganache network or Sepolia test network.
-
-### 6. Deploy the Smart Contract
-
-The smart contract can be deployed using **Remix IDE** or **Truffle**.
-
-### 7. Run the Application
-
-Open the frontend and connect MetaMask.
+or run the frontend through your configured development environment.
 
 ---
 
-## 🗳️ Voting Process
+## 🧪 Testing
+
+The application can be tested using:
+
+* Ganache for a local Ethereum blockchain
+* MetaMask for wallet interaction
+* Sepolia testnet for test-network deployment
+* Multiple test accounts for voting scenarios
+
+### Example Test Flow
 
 ```text
-User
-  ↓
-Open Voting Website
-  ↓
 Connect MetaMask
-  ↓
+       ↓
+Register Voter
+       ↓
+View Candidates
+       ↓
 Select Candidate
-  ↓
-Submit Vote
-  ↓
+       ↓
 Confirm Transaction
-  ↓
-Smart Contract
-  ↓
-Blockchain
+       ↓
+Vote Recorded
+       ↓
+Verify Transaction
+       ↓
+View Results
 ```
 
 ---
 
-## 🔮 Future Scope
+## 🔐 Security Considerations
 
-* Better voter verification
-* Improved privacy
-* Mobile application
-* Better security
-* Zero-knowledge proof integration
-* Improved user interface
-* Advanced election management
+Blockchain provides strong data integrity and transparency, but a production-ready voting system requires additional security mechanisms.
+
+Potential areas for improvement include:
+
+* Strong voter identity verification
+* Prevention of duplicate voting
+* Secure smart-contract auditing
+* Privacy-preserving voting
+* Access control
+* Protection against wallet compromise
+* Secure backend configuration
+* Comprehensive penetration testing
+
+---
+
+## 👨‍💻 My Contribution
+
+**Dhruv Sharma**
+
+As a contributor to this project, my work included:
+
+* Blockchain and Web3 integration
+* Voting system implementation
+* Frontend integration
+* Testing and debugging
+* Smart-contract interaction
+* Project documentation
+* GitHub project management
+
+> Contribution details are listed to accurately represent my involvement in the collaborative project.
+
+---
+
+## 🤝 Project Collaboration
+
+This project was developed collaboratively with **Bhavya Goel**.
+
+The original collaborative project is available here:
+
+**Original Repository:**
+https://github.com/bhavyweb3/Decentralized-Voting-System
+
+This repository is maintained independently by **Dhruv Sharma** for academic, portfolio, and professional purposes, while giving proper credit to the original project collaboration.
+
+
+
+## 🚀 Future Improvements
+
+Possible future enhancements include:
+
+* [ ] Advanced voter authentication
+* [ ] Role-based access control
+* [ ] Improved smart-contract security
+* [ ] Real-time voting results
+* [ ] Responsive mobile interface
+* [ ] IPFS-based decentralized storage
+* [ ] Zero-knowledge privacy mechanisms
+* [ ] Better transaction monitoring
+* [ ] Automated smart-contract testing
+* [ ] Production-grade deployment
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* Blockchain fundamentals
+* Ethereum architecture
+* Solidity smart contracts
+* Web3 integration
+* MetaMask wallet integration
+* Blockchain transactions
+* Decentralized application development
+* Smart-contract testing
+* Git and GitHub collaboration
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is developed for **academic and educational purposes**. It is a prototype and should not be used for real-world elections without additional security, privacy, authentication, and legal requirements.
+This project is developed **for academic and educational purposes only**.
+
+It is a prototype demonstrating blockchain-based voting concepts and should **not be used for real-world elections** without extensive security auditing, privacy protection, identity verification, legal compliance, and professional testing.
 
 ---
 
-## ⭐ Acknowledgement
+## 📜 License
 
-This project demonstrates the use of **Blockchain, Ethereum, Smart Contracts, MetaMask, and Web Technologies** to develop a decentralized voting system.
+This project is intended for educational and academic use.
+
+Please review the repository history and project contributors before redistributing or using the project commercially.
+
+---
+
+## ⭐ Support
+
+If you find this project useful for learning about Blockchain and Web3 development, consider giving the repository a ⭐ on GitHub.
+
+---
+
+### 👤 Author
+
+**Dhruv Sharma**
+
+B.Tech Computer Science Engineering — Blockchain
+
+GitHub:
+https://github.com/Dhruvchain
+
+LinkedIn:
+https://www.linkedin.com/in/dhruv-sharma-8b870431b/
+
+---
+
+**Built with ❤️ while learning Blockchain & Web3 Development.**
