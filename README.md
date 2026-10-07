@@ -73,7 +73,7 @@ This project explores a decentralized approach where voting operations are manag
                                ▼
                     ┌─────────────────────┐
                     │      MetaMask       │
-                    │   Wallet / Web3     │
+                    │   Wallet / Web3      │
                     └──────────┬──────────┘
                                │
                                ▼
@@ -141,13 +141,12 @@ Decentralized-Voting-System/
 │
 ├── migrations/
 │
-├── images/
-│
 ├── README.md
 │
 └── package.json
 ```
 
+> The exact folder structure may vary depending on the project configuration.
 
 ---
 
@@ -304,75 +303,6 @@ https://github.com/bhavyweb3/Decentralized-Voting-System
 
 This repository is maintained independently by **Dhruv Sharma** for academic, portfolio, and professional purposes, while giving proper credit to the original project collaboration.
 
-
-
-## 🚀 Future Improvements
-
-Possible future enhancements include:
-
-* [ ] Advanced voter authentication
-* [ ] Role-based access control
-* [ ] Improved smart-contract security
-* [ ] Real-time voting results
-* [ ] Responsive mobile interface
-* [ ] IPFS-based decentralized storage
-* [ ] Zero-knowledge privacy mechanisms
-* [ ] Better transaction monitoring
-* [ ] Automated smart-contract testing
-* [ ] Production-grade deployment
-
 ---
 
-## 🎯 Learning Outcomes
-
-Through this project, I gained practical experience in:
-
-* Blockchain fundamentals
-* Ethereum architecture
-* Solidity smart contracts
-* Web3 integration
-* MetaMask wallet integration
-* Blockchain transactions
-* Decentralized application development
-* Smart-contract testing
-* Git and GitHub collaboration
-
----
-
-## ⚠️ Disclaimer
-
-This project is developed **for academic and educational purposes only**.
-
-It is a prototype demonstrating blockchain-based voting concepts and should **not be used for real-world elections** without extensive security auditing, privacy protection, identity verification, legal compliance, and professional testing.
-
----
-
-## 📜 License
-
-This project is intended for educational and academic use.
-
-Please review the repository history and project contributors before redistributing or using the project commercially.
-
----
-
-## ⭐ Support
-
-If you find this project useful for learning about Blockchain and Web3 development, consider giving the repository a ⭐ on GitHub.
-
----
-
-### 👤 Author
-
-**Dhruv Sharma**
-
-B.Tech Computer Science Engineering — Blockchain
-
-GitHub:
-https://github.com/Dhruvchain
-
-LinkedIn:
-https://www.linkedin.com/in/dhruv-sharma-8b870431b/
-
----
-
-**Built with ❤️ while learning Blockchain & Web3 Development.**
+## 🚀 Future Imp
